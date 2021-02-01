@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <span class="sign__word">My Site</span>
+        <button id="btnCalc">Калькулятор</button>
+        <button id="btnGame">Игра</button>
+
+
+    </div>
+    <div>
+        <div class="wrapper">
+            <p class="text">Привет, вы попали на мой первый созданный мною сайт! 
+                Тут вы увидите пару программ написанных на Java Script!
+                Не судите строго я только учусь)
+            </p>
+        </div>
+    </div>
+
+
+    <div id="modalCalculator" class="modalCalc">
+        <div id="calcContent" class="modalCalcContent">
+            <span class="closeCalc">&times;</span>
+            <textarea id=inputVal>0</textarea>
+        </div>
+    </div>
+    <div id="modalGames" class="modalGame">
+        <div class="modalGameContent">
+            <span class="closeGame">&times;</span>
+            <canvas width='300' height='600'></canvas>
+            <p class="resultName">Счет</p>
+            <input id="scoreGame" class="resultValue" type="text" value="0">
+            <button id="restartbutton" onclick="restartButtonClicked()">Новая Игра</button>
+            <button id="pausebutton" onclick="pauseButtonClicked()">Пауза</button>
+            <button id="playbutton" onclick="playButtonClicked() ">Продолжить</button>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Vibur" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/styleText.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/calc.js"></script>
+<script src="js/index.js"></script>
+<script src='js/tetris.js'></script>
+<script src='js/controller.js'></script>
+<script src='js/render.js'></script>
+<script src="js/animate.js"></script>
